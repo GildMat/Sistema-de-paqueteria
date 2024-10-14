@@ -32,6 +32,10 @@ public class ApplicationDbContext: DbContext
             .HasOne(e => e.Producto)
             .WithMany()
             .HasForeignKey(e => e.CodigoProducto);
+        
+        modelBuilder.Entity<Ventas>()
+            .Property(v => v.TotalVenta)
+            .HasColumnType("decimal(18, 2)"); 
     }
     
 }

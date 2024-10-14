@@ -16,13 +16,13 @@ public class NotaCreditoController : Controller
         _context = context;
     }
 
-    [HttpGet]
+    [HttpGet("/NotaCredito")]
     public async Task<ActionResult<IEnumerable<NotasCredito>>> GetNotasCredito()
     {
         return await _context.NotasCredito.Include(nc => nc.Ventas).ToListAsync();
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("/NotaCredito/{id}")]
     public async Task<ActionResult<NotasCredito>> GetNotaCredito(int id)
     {
         var notaCredito = await _context.NotasCredito.Include(nc => nc.Ventas).FirstOrDefaultAsync(nc => nc.CodigoNotaCredito == id);
@@ -35,7 +35,7 @@ public class NotaCreditoController : Controller
         return notaCredito;
     }
 
-    [HttpPost]
+    [HttpPost("/NotaCredito/post")]
     public async Task<ActionResult<NotasCredito>> PostNotaCredito(NotasCredito notaCredito)
     {
         _context.NotasCredito.Add(notaCredito);
@@ -43,7 +43,7 @@ public class NotaCreditoController : Controller
         return CreatedAtAction(nameof(GetNotaCredito), new { id = notaCredito.CodigoNotaCredito }, notaCredito);
     }
 
-    [HttpPut("{id}")]
+    [HttpPut("/NotaCredito/put/{id}")]
     public async Task<IActionResult> PutNotaCredito(int id, NotasCredito notaCredito)
     {
         if (id != notaCredito.CodigoNotaCredito)
@@ -72,7 +72,7 @@ public class NotaCreditoController : Controller
         return NoContent();
     }
 
-    [HttpDelete("{id}")]
+    [HttpDelete("/NotaCredito/delete/{id}")]
     public async Task<IActionResult> DeleteNotaCredito(int id)
     {
         var notaCredito = await _context.NotasCredito.FindAsync(id);

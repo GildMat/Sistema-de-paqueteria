@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mensajeria")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06d31112c3c972565ee8cfc7071cd1a67d1591e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mensajeria")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mensajeria")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

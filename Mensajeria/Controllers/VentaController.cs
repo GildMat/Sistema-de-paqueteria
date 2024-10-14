@@ -18,7 +18,7 @@ public class VentaController : Controller
         _context = context;
     }
 
-    [HttpGet]
+    [HttpGet("/ventas/get")]
     public async Task<ActionResult<IEnumerable<Ventas>>> GetVentas()
     {
         return await _context.Ventas.ToListAsync();
@@ -37,7 +37,7 @@ public class VentaController : Controller
         return venta;
     }
 
-    [HttpPost]
+    [HttpPost("/ventas/post")]
     public async Task<ActionResult<Ventas>> PostVenta(Ventas venta)
     {
         _context.Ventas.Add(venta);
@@ -45,7 +45,7 @@ public class VentaController : Controller
         return CreatedAtAction(nameof(GetVenta), new { id = venta.CodigoVenta }, venta);
     }
 
-    [HttpPut("{id}")]
+    [HttpPut("/ventas/put/{id}")]
     public async Task<IActionResult> PutVenta(int id, Ventas venta)
     {
         if (id != venta.CodigoVenta)
@@ -74,7 +74,7 @@ public class VentaController : Controller
         return NoContent();
     }
 
-    [HttpDelete("{id}")]
+    [HttpDelete("/ventas/delete/{id}")]
     public async Task<IActionResult> DeleteVenta(int id)
     {
         var venta = await _context.Ventas.FindAsync(id);

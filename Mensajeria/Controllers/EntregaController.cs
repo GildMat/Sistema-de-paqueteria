@@ -17,13 +17,13 @@ public class EntregaController : Controller
         _context = context;
     }
 
-    [HttpGet]
+    [HttpGet("/entrega")]
     public async Task<ActionResult<IEnumerable<Entregas>>> GetEntregas()
     {
         return await _context.Entregas.Include(e => e.Cliente).Include(e => e.Producto).ToListAsync();
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("/entrega/{id}")]
     public async Task<ActionResult<Entregas>> GetEntrega(int id)
     {
         var entrega = await _context.Entregas.Include(e => e.Cliente).Include(e => e.Producto).FirstOrDefaultAsync(e => e.CodigoEntrega == id);
@@ -36,7 +36,7 @@ public class EntregaController : Controller
         return entrega;
     }
 
-    [HttpPost]
+    [HttpPost("/entrega/post")]
     public async Task<ActionResult<Entregas>> PostEntrega(Entregas entrega)
     {
         _context.Entregas.Add(entrega);
@@ -44,7 +44,7 @@ public class EntregaController : Controller
         return CreatedAtAction(nameof(GetEntrega), new { id = entrega.CodigoEntrega }, entrega);
     }
 
-    [HttpPut("{id}")]
+    [HttpPut("/entrega/put/{id}")]
     public async Task<IActionResult> PutEntrega(int id, Entregas entrega)
     {
         if (id != entrega.CodigoEntrega)
@@ -73,7 +73,7 @@ public class EntregaController : Controller
         return NoContent();
     }
 
-    [HttpDelete("{id}")]
+    [HttpDelete("/entrega/delete/{id}")]
     public async Task<IActionResult> DeleteEntrega(int id)
     {
         var entrega = await _context.Entregas.FindAsync(id);

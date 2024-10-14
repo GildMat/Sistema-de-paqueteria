@@ -16,13 +16,13 @@ public class ProductosController : Controller
         _context = context;
     }
 
-    [HttpGet]
+    [HttpGet("/productos/")]
     public async Task<ActionResult<IEnumerable<Productos>>> GetProductos()
     {
         return await _context.Productos.ToListAsync();
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("/productos/{id}")]
     public async Task<ActionResult<Productos>> GetProducto(int id)
     {
         var producto = await _context.Productos.FindAsync(id);
@@ -35,7 +35,7 @@ public class ProductosController : Controller
         return producto;
     }
 
-    [HttpPost]
+    [HttpPost("/productos/post")]
     public async Task<ActionResult<Productos>> PostProducto(Productos producto)
     {
         _context.Productos.Add(producto);
@@ -43,7 +43,7 @@ public class ProductosController : Controller
         return CreatedAtAction(nameof(GetProducto), new { id = producto.CodigoProducto }, producto);
     }
 
-    [HttpPut("{id}")]
+    [HttpPut("/productos/put/{id}")]
     public async Task<IActionResult> PutProducto(int id, Productos producto)
     {
         if (id != producto.CodigoProducto)
@@ -72,7 +72,7 @@ public class ProductosController : Controller
         return NoContent();
     }
 
-    [HttpDelete("{id}")]
+    [HttpDelete("/productos/delete/{id}")]
     public async Task<IActionResult> DeleteProducto(int id)
     {
         var producto = await _context.Productos.FindAsync(id);

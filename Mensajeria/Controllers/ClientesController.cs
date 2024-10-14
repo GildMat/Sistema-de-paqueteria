@@ -17,13 +17,13 @@ public class ClientesController : Controller
         _context = context;
     }
 
-    [HttpGet]
+    [HttpGet("/cliente")]
     public async Task<ActionResult<IEnumerable<ClientesModels>>> GetClientes()
     {
         return await _context.Clientes.ToListAsync();
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("/cliente/{id}")]
     public async Task<ActionResult<ClientesModels>> GetCliente(int id)
     {
         var cliente = await _context.Clientes.FindAsync(id);
@@ -44,7 +44,7 @@ public class ClientesController : Controller
         return CreatedAtAction(nameof(GetCliente), new { id = cliente.CodigoCliente }, cliente);
     }
 
-    [HttpPut("{id}")]
+    [HttpPut("/cliente/{id}")]
     public async Task<IActionResult> PutCliente(int id, ClientesModels cliente)
     {
         if (id != cliente.CodigoCliente)
@@ -56,6 +56,7 @@ public class ClientesController : Controller
 
         try
         {
+            
             await _context.SaveChangesAsync();
         }
         catch (DbUpdateConcurrencyException)
@@ -73,7 +74,7 @@ public class ClientesController : Controller
         return NoContent();
     }
 
-    [HttpDelete("{id}")]
+    [HttpDelete("/cliente/{id}")]
     public async Task<IActionResult> DeleteCliente(int id)
     {
         var cliente = await _context.Clientes.FindAsync(id);

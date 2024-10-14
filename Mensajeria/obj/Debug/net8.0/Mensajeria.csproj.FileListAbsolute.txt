@@ -84,3 +84,4 @@ D:\4)Proyectos\BackEnd\C #\2.proyectos\3. Paqueteria\Mensajeria\Mensajeria\obj\D
 D:\4)Proyectos\BackEnd\C #\2.proyectos\3. Paqueteria\Mensajeria\Mensajeria\obj\Debug\net8.0\Mensajeria.pdb
 D:\4)Proyectos\BackEnd\C #\2.proyectos\3. Paqueteria\Mensajeria\Mensajeria\obj\Debug\net8.0\Mensajeria.genruntimeconfig.cache
 D:\4)Proyectos\BackEnd\C #\2.proyectos\3. Paqueteria\Mensajeria\Mensajeria\obj\Debug\net8.0\ref\Mensajeria.dll
+D:\4)Proyectos\BackEnd\C #\2.proyectos\3. Paqueteria\Mensajeria\Mensajeria\obj\Debug\net8.0\Mensajeria.sourcelink.json
