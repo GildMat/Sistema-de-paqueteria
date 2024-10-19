@@ -3245,32 +3245,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dangu\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\LEONIDAS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\4)Proyectos\\BackEnd\\C #\\2.proyectos\\3. Paqueteria\\Mensajeria\\Mensajeria\\Mensajeria.csproj",
+      "projectUniqueName": "C:\\Users\\LEONIDAS\\Documents\\Sistema-de-paqueteria\\Mensajeria\\Mensajeria.csproj",
       "projectName": "Mensajeria",
-      "projectPath": "D:\\4)Proyectos\\BackEnd\\C #\\2.proyectos\\3. Paqueteria\\Mensajeria\\Mensajeria\\Mensajeria.csproj",
-      "packagesPath": "C:\\Users\\dangu\\.nuget\\packages\\",
-      "outputPath": "D:\\4)Proyectos\\BackEnd\\C #\\2.proyectos\\3. Paqueteria\\Mensajeria\\Mensajeria\\obj\\",
+      "projectPath": "C:\\Users\\LEONIDAS\\Documents\\Sistema-de-paqueteria\\Mensajeria\\Mensajeria.csproj",
+      "packagesPath": "C:\\Users\\LEONIDAS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LEONIDAS\\Documents\\Sistema-de-paqueteria\\Mensajeria\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\dangu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\LEONIDAS\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3283,6 +3275,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3321,7 +3318,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.306/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

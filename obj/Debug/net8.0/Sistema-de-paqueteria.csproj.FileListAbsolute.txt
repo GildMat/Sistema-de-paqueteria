@@ -1,0 +1,5 @@
+C:\Users\LEONIDAS\Documents\Sistema-de-paqueteria\obj\Debug\net8.0\Sistema-de-paqueteria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LEONIDAS\Documents\Sistema-de-paqueteria\obj\Debug\net8.0\Sistema-de-paqueteria.AssemblyInfoInputs.cache
+C:\Users\LEONIDAS\Documents\Sistema-de-paqueteria\obj\Debug\net8.0\Sistema-de-paqueteria.AssemblyInfo.cs
+C:\Users\LEONIDAS\Documents\Sistema-de-paqueteria\obj\Debug\net8.0\Sistema-de-paqueteria.csproj.CoreCompileInputs.cache
+C:\Users\LEONIDAS\Documents\Sistema-de-paqueteria\obj\Debug\net8.0\Sistema-de-paqueteria.sourcelink.json

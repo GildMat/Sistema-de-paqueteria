@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LEONIDAS\\Documents\\Sistema-de-paqueteria\\Mensajeria\\Mensajeria.csproj": {}
+    "C:\\Users\\LEONIDAS\\Documents\\Sistema-de-paqueteria\\Sistema-de-paqueteria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LEONIDAS\\Documents\\Sistema-de-paqueteria\\Mensajeria\\Mensajeria.csproj": {
+    "C:\\Users\\LEONIDAS\\Documents\\Sistema-de-paqueteria\\Sistema-de-paqueteria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LEONIDAS\\Documents\\Sistema-de-paqueteria\\Mensajeria\\Mensajeria.csproj",
-        "projectName": "Mensajeria",
-        "projectPath": "C:\\Users\\LEONIDAS\\Documents\\Sistema-de-paqueteria\\Mensajeria\\Mensajeria.csproj",
+        "projectUniqueName": "C:\\Users\\LEONIDAS\\Documents\\Sistema-de-paqueteria\\Sistema-de-paqueteria.csproj",
+        "projectName": "Sistema-de-paqueteria",
+        "projectPath": "C:\\Users\\LEONIDAS\\Documents\\Sistema-de-paqueteria\\Sistema-de-paqueteria.csproj",
         "packagesPath": "C:\\Users\\LEONIDAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LEONIDAS\\Documents\\Sistema-de-paqueteria\\Mensajeria\\obj\\",
+        "outputPath": "C:\\Users\\LEONIDAS\\Documents\\Sistema-de-paqueteria\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LEONIDAS\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -42,20 +42,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.0-rc.2.24474.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[9.0.0-rc.2.24474.1, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.8.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -68,9 +54,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
